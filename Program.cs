@@ -15,7 +15,7 @@ namespace Lab4
             while (runProgram)
             {
                 Console.WriteLine("Learn yor squares and cubes!");
-                Console.WriteLine("Enter and integet:");
+                Console.WriteLine("Enter and integer:");
                 int i = int.Parse(Console.ReadLine());
 
                 string header = "Number,Squared,Cubed";
