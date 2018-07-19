@@ -28,7 +28,7 @@ namespace Lab4
                 
                 
 
-                for (int p = 1; p <= i; p++)
+                for (int p = 1; p <= i; p++)                           
                 {
                     int square = p * p;
                     int cube = p * p * p;
