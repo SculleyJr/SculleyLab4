@@ -14,9 +14,13 @@ namespace Lab4
             bool runProgram = true;
             while (runProgram)
             {
+                // Greets and collects data from user
+
                 Console.WriteLine("Learn yor squares and cubes!");
-                Console.WriteLine("Enter and integer:");
+                Console.WriteLine("Enter an integer:");
                 int i = int.Parse(Console.ReadLine());
+
+                // Creates a string array that is formated evenly to represent the table
 
                 string header = "Number,Squared,Cubed";
                 string[] headerArray = header.Split(',');
@@ -26,22 +30,21 @@ namespace Lab4
                
 
                 
-                
+                // This "for loop" loops as many times as the users integer
 
                 for (int p = 1; p <= i; p++)                           
                 {
                     int square = p * p;
                     int cube = p * p * p;
-                    Console.WriteLine($"{p,-10}{square,-10}{cube,-10}");
+                    Console.WriteLine($"{p,-10}{square,-10}{cube,-10}");               //the format is to match the header above
                 }
 
                 Console.WriteLine("Press Y to coninue:");
                 string input = Console.ReadLine();
-                if (String.Equals(input, "Y"))
+                if (input.ToLower() == "y")
                 { runProgram = true; }
                 else
                 { runProgram = false; }
-
 
 
 
